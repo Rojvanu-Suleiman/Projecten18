@@ -1,11 +1,10 @@
-// Variables (5 + 3 types)
 $primary-color: #0A0F2C;
 $secondary-color: #333;
 $text-color: white;
 $border-radius: 5px;
 $breakpoint-tablet: 768px;
 
-// Namespace styles
+
 %default-font {
   font-family: Arial, sans-serif;
   color: $text-color;
@@ -15,7 +14,6 @@ $breakpoint-tablet: 768px;
   background-color: black;
 }
 
-// Extend in body
 html, body {
   height: 100%;
   margin: 0;
@@ -26,7 +24,6 @@ html, body {
   flex-direction: column;
 }
 
-// Header & footer
 header, footer {
   background-color: $primary-color;
   text-align: center;
@@ -34,7 +31,6 @@ header, footer {
   padding: 1.5rem;
 }
 
-// Navigation styling with nesting and &
 nav {
   background: $secondary-color;
   text-align: center;
@@ -74,7 +70,6 @@ nav {
   }
 }
 
-// Main area
 main {
   flex: 1;
   display: flex;
@@ -84,7 +79,6 @@ main {
   padding: 2rem;
 }
 
-// Profile styling
 .profile {
   text-align: center;
   padding: 2rem;
@@ -97,7 +91,6 @@ main {
   }
 }
 
-// Programmeertalen (images)
 .languages {
   display: flex;
   justify-content: center;
@@ -111,13 +104,11 @@ main {
   }
 }
 
-// Contact section
 .contact {
   text-align: center;
   padding: 2rem;
 }
 
-// Media queries
 @media screen and (min-width: $breakpoint-tablet) {
   main {
     display: grid;
@@ -132,7 +123,6 @@ main {
   }
 }
 
-// Extra: use of @if, @for, @each, @while
 @for $i from 1 through 3 {
   .padding-#{$i} {
     padding: 1rem * $i;
