@@ -1,0 +1,262 @@
+/* Eerste code (originele opmaak) + Header & Footer van de tweede code */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px;
+    line-height: 1.7;
+    background-color: #eef3f7;
+    color: #102a43;
+}
+
+/* Header uit de tweede code */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #1e88e5;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 125px;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    color: white;
+    background-color: #42a5f5;
+    transition: all 0.3s;
+}
+
+.nav-link.active {
+    background-color: #0d47a1;
+}
+
+.nav-link:hover {
+    background-color: #1976d2;
+}
+
+/* Originele body content aanpassing voor header */
+body {
+    padding-top: 100px; /* Voorkomt dat content achter de header komt */
+}
+
+/* Rest van de eerste code (tabellen, formulieren, etc.) */
+h1, h2 {
+    color: #0d47a1;
+    border-bottom: 3px solid #1565c0;
+    padding-bottom: 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover {
+    color: #1976d2;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    margin-top: 25px;
+}
+
+th {
+    background-color: #1565c0;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #90caf9;
+    transition: background-color 0.3s ease-in-out;
+}
+
+tr:nth-child(even) {
+    background-color: #e3f2fd;
+}
+
+tr:hover {
+    background-color: #bbdefb;
+}
+
+form {
+    background-color: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12);
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #0d47a1;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #2196f3;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1565c0;
+    box-shadow: 0 0 6px rgba(21, 101, 192, 0.5);
+}
+
+input[type="submit"], button {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #0d47a1;
+    transform: translateY(-3px);
+}
+
+.alert-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef5350;
+    padding: 18px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.alert-success {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border: 1px solid #64b5f6;
+    padding: 18px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+/* Footer uit de tweede code */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #1e88e5;
+    color: white;
+    font-size: 14px;
+}
+
+/* ✅ Fade-in animatie bij laden */
+body {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ✅ Zebra-striping voor betere leesbaarheid */
+table tr:nth-child(even) {
+    background-color: #f9fcff;
+}
+
+/* ✅ Tafelrij hover effect met subtiele schaal en highlight */
+table tr:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.003);
+    transition: all 0.2s ease;
+}
+
+/* ✅ Scrollbar direct op table (werkt bij overflow op kleinere schermen) */
+table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* ✅ Mooie scrollbar voor moderne look */
+table::-webkit-scrollbar {
+    height: 8px;
+}
+
+table::-webkit-scrollbar-track {
+    background: #e3f2fd;
+    border-radius: 10px;
+}
+
+table::-webkit-scrollbar-thumb {
+    background-color: #1e88e5;
+    border-radius: 10px;
+}
+
+table::-webkit-scrollbar-thumb:hover {
+    background-color: #1565c0;
+}
+
+/* ✅ Schaduw en subtiele animatie op titel */
+h1 {
+    text-shadow: 1px 2px 3px rgba(30, 136, 229, 0.1);
+    animation: titleBounce 0.6s ease-in-out;
+}
+
+@keyframes titleBounce {
+    0% { transform: scale(0.95); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* ✅ Responsive: kleinere paddings en lettertypes op small screens */
+@media (max-width: 768px) {
+    th, td {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+
+
